@@ -1,6 +1,6 @@
 # minnesota-lakes
 
-This project aims to analyze the variations in the number of ice-cover days of Minnesota's lakes over time and investigate the potential consequences of rising temperatures on these lakes.
+This project aims to analyze the variations in the number of ice-cover days of Minnesota's lakes over time and explore the potential consequences of rising temperatures on these lakes.
 
 ## Data
 - All data can be found in the `data` folder.
