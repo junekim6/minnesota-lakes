@@ -22,7 +22,7 @@ nav {
     margin: 0 10px;
   }
   
-  a {
+  a.nav {
     color: #fff;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -90,6 +90,22 @@ nav {
     margin-right: auto;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 900px;
+    max-width: 90%;
+    padding: 10px 10px;
+}
+
+.algae {
+    width: 50%;
+    margin: auto;
+    padding: 10px 15px;
+}
 
 /* text styles */
 
@@ -109,7 +125,7 @@ p.kicker {
 }
 
 h1.headline {
-    font-size: 3.7rem;
+    font-size: 3.2rem;
     line-height: 1.1;
     margin-bottom: 0.25rem;
     margin-top: 1rem;
@@ -117,7 +133,7 @@ h1.headline {
 }
 
 h2.subhead {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     margin-bottom: 0;
     margin-top: 15px;
@@ -156,7 +172,7 @@ h3.section-head {
 
 
 p.note {
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 
 /* chart styles */
@@ -260,30 +276,47 @@ p.caption {
         padding: 0;
     }
 
+    .container {
+        flex-direction: column;
+        max-width: 95%;
+        padding: 10px 0px;
+    }
+
+    .algae {
+        width: 95%;
+        padding: 10px 0px;
+    }
 }
 
 /* These are the styles for ai2html */
 
-#g-template-laptop,
-#g-template-medium,
-#g-template-mobile {
+#g-bemidji-radial-laptop,
+#g-bemidji-radial-tablet,
+#g-bemidji-radial-mobile,
+#g-iceridge-laptop,
+#g-iceridge-tablet,
+#g-iceridge-mobile
+ {
     display: none;
 }
 
-@media (max-width: 490px) {
-    #g-template-mobile {
+@media (max-width: 550px) {
+    #g-bemidji-radial-mobile,
+    #g-iceridge-mobile {
         display: block;
     }
 }
 
-@media (min-width: 490px) and (max-width: 620px) {
-    #g-template-laptop {
+@media (min-width: 550px) and (max-width: 800px) {
+    #g-bemidji-radial-tablet,
+    #g-iceridge-tablet {
         display: block;
     }
 }
 
-@media (min-width: 620px) {
-    #g-template-medium {
+@media (min-width: 800px) {
+    #g-bemidji-radial-laptop,
+    #g-iceridge-laptop {
         display: block;
     }
 }
